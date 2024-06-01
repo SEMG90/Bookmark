@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+
+    <!-- fonts -->
+    <!-- main font [Rubik] -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- header font [Signika Negative] -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Signika+Negative:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- logo font [Caveat] -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Signika+Negative:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- fonts icons css -->
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- start header -->
+    <header>
+        <!-- start container -->
+        <div class="container">
+            <!-- start row -->
+            <div class="row">
+                <!-- start logo -->
+                <div class="logo text-center">
+                    <h1 class="m-auto display-3 font-logo fw-bolder">Bookmarker</h1>
+                </div>
+                <!-- end logo -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </header>
+    <!-- end header -->
+
+    <!-- start line -->
+    <div class="line">
+        <!-- start container -->
+        <div class="container">
+            <!-- start row -->
+            <div class="row">
+                <div class="bg-line"></div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end line -->
+
+    <!-- start sction form booking -->
+    <section class="form-booking">
+        <!-- start container -->
+        <div class="container">
+            <!-- start row -->
+            <div class="row">
+
+                <!-- start booking -->
+                <div class="booking">
+                    <div class="header d-flex flex-row align-items-center justify-content-center gap-2">
+                        <i class="fa-solid fa-bookmark h3 left-icon"></i>
+                        <h3 class="font-header fw-bold">Bookmark your favorite sites</h3>
+                        <i class="fa-solid fa-bookmark h3 right-icon"></i>
+                    </div>
+
+                    <div class="form">
+                        <div class="sName mb-3">
+                            <i class="fa-solid fa-book-bookmark pe-2"></i>
+                            <label for="siteName" class="form-label fw-bold">Site Name</label>
+                            <input type="text" class="form-control" id="siteName" placeholder="Book Name">
+                          </div>
+                          <div class="sUrl mb-3">
+                            <i class="fa-solid fa-link pe-1"></i>
+                            <label for="siteUrl" class="form-label fw-bold">Site URL</label>
+                            <input type="url" class="form-control" id="siteUrl" placeholder="Website URL">
+                          </div>
+                          <div class="btn-submit text-center">
+                            <button id="addBtn" class="btn btn-danger text-white ps-5 pe-5 rounded-3" onclick="addLine()">Submit</button>
+                          </div>
+                    </div>
+                </div>
+                <!-- end booking -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->    
+    </section>
+    <!-- end sction form booking -->
+
+    <!-- start line -->
+    <div class="line">
+        <!-- start container -->
+        <div class="container">
+            <!-- start row -->
+            <div class="row">
+                <div class="bg-line"></div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end line -->
+
+    <!-- start sction table booking -->
+    <section class="table-booking">
+      <!-- start container -->
+      <div class="container">
+          <!-- start row -->
+          <div class="row">
+
+              <!-- start booking -->
+              <div class="row-booking">
+                <div class="head-booking bg-white d-flex flex-row align-items-center justify-content-around pt-2 gap-5">
+                  <div class="index col-2 text-center">
+                    <h6>Index</h6>
+                  </div>
+                  <div class="websiteName col-2 text-center">
+                    <h6>Website Name</h6>
+                  </div>
+                  <div class="visit col-2 text-center">
+                    <h6>Visit</h6>
+                  </div>
+                  <div class="delete col-2 text-center">
+                    <h6>Delete</h6>
+                  </div>
+                </div>
+                <div class="box-booking" id="box-booking">
+                  
+                </div>
+              </div>
+              <!-- end booking -->
+          </div>
+          <!-- end row -->
+      </div>
+      <!-- end container -->    
+  </section>
+  <!-- end sction form booking -->
+
+
+
+    <!-- bootstrap script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- fonts icons script -->
+    <script src="js/all.min.js"></script>
+
+    <!-- main script -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
